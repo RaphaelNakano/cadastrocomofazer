@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de Usuarios</h1>
+
+    <form name="frmCadastro" action="obrigado.html" method="post">
+        <label for="txtNome">Nome: </label>
+        <input type="text" name="txtNome" id="txtNome" required />
+        <br>
+        <label>E-mail:
+            <input type="email" name="txtEmail" id="txtEmail" placeholder="Digite seu email" />
+        </label>
+        <br/>
+        <label>CPF:
+            <input type="text" name="txtCPF" id="txtCPF" maxlength="14" />
+        </label>
+        <br>
+        <label
+            >Senha:
+            <input type="password" name="pwdSenha" id="pwdSenha"/>
+        </label>
+        <br/>
+        <label>Data de Nascimento:
+            <input type="date" name="dateDataNascimento" 
+            id="dateDataNascimento" min="2020-04-01" max="2024-03-31">
+        </label>
+        <br>
+        <label>Data de Nascimento
+            <input type="datetime-local" name="dateDataHoraNascimento" 
+            id="dateDataHoraNascimento" min="2020-04-01" max="2024-03-31">
+        </label>
+        <br>
+        <label>Qualidade:
+            <input type="number" name="quant" id="quant" min="1" max="10">
+        </label>
+        <label>Sexo: </label>
+        <label>
+            <input type="radio" name="sexo" id="sexoM" value="M"> Masculino
+        </label>
+        <label>
+            <input type="radio" name="sexo" id="sexoF" value="F"> Feminino
+        </label>
+        <label>
+            <input type="radio" name="sexo" id="sexoO" value="O"> Outros
+        </label>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
